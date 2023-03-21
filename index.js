@@ -1,4 +1,8 @@
-function canmelCase(str){
-    const words = str.split('');
-    return words.map(word => word0.toUppercase() + word.substring(1)).join("")
+function camelCase(str){
+    let words = str.split('');
+    let camelCased='';
+    words.forEach(function(word){
+        camelCased +=word.charAt(0).toUppercase()+ word.slice(1);
+    });
+   return camelCased;
 }
